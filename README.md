@@ -1,4 +1,5 @@
-# Ai-Powered-Web-Scraper - GPT-Neo Model SUCKS, soon own pre-train AI model
+# Ai-Powered-Web-Scraper - 
+## 'GPT-Neo Model SUCKS, soon own pre-train AI model'
 
 A Python script to generate and execute code based on user instructions using Hugging Face's GPT-Neo model. This tool can be particularly useful for dynamically creating web scraping scripts and automating repetitive coding tasks.
 
