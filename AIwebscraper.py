@@ -7,13 +7,10 @@ import time
 import logging
 from transformers import pipeline
 
-# Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Load a pre-trained model from Hugging Face
 generator = pipeline('text-generation', model='EleutherAI/gpt-neo-2.7B')
 
-# Function to generate code based on user instructions using Hugging Face model
 def generate_code(instructions):
     prompt = f"Generate Python code for the following web scraping task: {instructions}"
     print(prompt)
@@ -26,14 +23,13 @@ def generate_code(instructions):
         logging.error(f"Error generating code: {e}")
         return None
 
-# Function to execute the generated code
 def execute_code(code):
     try:
         exec(code)
     except Exception as e:
         logging.error(f"Error executing code: {e}")
 
-# Main function to prompt user for instructions and process the scraping task
+
 def main():
     clear_terminal()
     instructions = input("Enter the instructions: ")
