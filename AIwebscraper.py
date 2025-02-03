@@ -10,7 +10,7 @@ from transformers import pipeline
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 generator = pipeline('text-generation', model='EleutherAI/gpt-neo-2.7B')
-
+#prompt
 def generate_code(instructions):
     prompt = f"Generate Python code for the following web scraping task: {instructions}"
     print(prompt)
